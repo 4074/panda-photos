@@ -1,5 +1,6 @@
 'use strict';
 const electron = require('electron');
+const server = require('./server/index');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
 
@@ -22,8 +23,12 @@ app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600});
 
+  var port = 1828
+  server(port)
+
   // and load the index.html of the app.
-  mainWindow.loadURL('file://' + __dirname + '/index.html');
+//   mainWindow.loadURL('file://' + __dirname + '/app/index.html');
+  mainWindow.loadURL('http://127.0.0.1:' + port + '/posts');
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools();
