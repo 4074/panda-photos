@@ -1,0 +1,22 @@
+{
+  "name": "panda-photos",
+  "version": "0.1.0",
+  "description": "A desktop photos manager for Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4074/panda-photos.git"
+  },
+  "keywords": [
+    "panda",
+    "photos manager",
+    "Electron"
+  ],
+  "author": "4074",
+  "license": "MIT",
+  "devDependencies": {
+  }
+}
