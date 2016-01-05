@@ -4,7 +4,8 @@
   "description": "A desktop photos manager for Electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "electron": "electron main.js",
+    "server": "node server/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,9 @@
   ],
   "author": "4074",
   "license": "MIT",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
+    "express": "^4.13.3",
     "json-server": "^0.8.5"
   }
 }

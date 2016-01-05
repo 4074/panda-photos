@@ -1,6 +1,6 @@
 'use strict';
 const electron = require('electron');
-const server = require('./server/index');
+const server = require('./server/server');
 const app = electron.app;  // Module to control application life.
 const BrowserWindow = electron.BrowserWindow;  // Module to create native browser window.
 
